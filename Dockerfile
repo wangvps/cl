@@ -8,7 +8,8 @@ RUN  wget -O /cloud.tar.gz https://github.com/cloudreve/Cloudreve/releases/downl
 
 ADD start.sh /start.sh
 
-RUN echo './cloudreve' >> start.sh \
+RUN touch /conf.ini
+echo './cloudreve -c ./conf.ini' >> start.sh \
     && chmod +x start.sh
 
 CMD /start.sh
