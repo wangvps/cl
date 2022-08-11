@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cat < EOF >> /conf.ini
+cat << EOF > /conf.ini
 [System]
 Debug = false
 Mode = master
