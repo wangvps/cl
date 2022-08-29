@@ -14,7 +14,7 @@ Port = ${PORT}
 User = ${USER}
 Password = ${PASS}
 Host = ${HOST}
-Name = v3
+Name = ${NAME}
 TablePrefix = cd
 Charset = utf8
 EOF
